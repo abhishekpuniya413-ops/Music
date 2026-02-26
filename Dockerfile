@@ -1,6 +1,6 @@
-FROM python:3.11-slim-buster
+FROM python:3.11-slim-bookworm
 
-# Install ffmpeg and git
+# Install ffmpeg, git, and nodejs
 RUN apt-get update && apt-get install -y ffmpeg git nodejs npm
 
 # Copy the application
